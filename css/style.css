@@ -12,8 +12,12 @@ body
 }
 nav
 {
-    background-color: black ; /* couleur de fond */  
+    background-color: rgba(0, 0, 0, 0.85); /* couleur de fond  avec alpha a 85% opac*/  
     text-transform: uppercase; /*Met le texte en majuscule*/
+    position: fixed; /*fixe le nav en scroll */
+    top: 0;
+    left: 0;
+    right: 0;
 }
 nav .container
 {
@@ -70,3 +74,33 @@ header h2
     background-color:#ff2400; 
     transition: all 500ms; /*permet d'ajouter une transition entre les changement de valeurs*/
 }
+main section
+{
+    display: flex; /* mais les élément les un a coté des autre */
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    margin: 150px 0;
+}
+main section img
+{
+    width:40%;          /*largeur*/
+    border-radius: 100%;    /*Hauteur*/
+    object-fit: cover;      /*regler l'image */
+}
+main section h3
+{
+    font-size: 4rem;
+    margin: 0;
+    font-weight: lighter; /* forme écriture plus fine */
+}
+footer
+{
+    display: flex;   /* mais les élément les un a coté des autre */
+    justify-content: space-between; /*sépare les éléments en utilisant l'espace disponible*/
+    align-items: center;     /*centre verticalement*/
+    color: gray; 
+    border-top: 1px solid gray; /*bordure du haut 1px solide */
+}
+
+
