@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+body
+{
+    font-family: 'Ubuntu', sans-serif; /*police de caractère sur site google fonts */
+    font-size:16px;     /*taille de police*/
+    margin:0;    /*marge extèrieure*/
+}
+.container
+{
+    width:60%; /*largeur de l'élément*/
+    margin: auto; /*Appliques des marges extèrieurs sur l'espace disponible si une largeur fixe à été présisée*/
+}
+nav
+{
+    background-color: black ; /* couleur de fond */  
+    text-transform: uppercase; /*Met le texte en majuscule*/
+}
+nav .container
+{
+    display: flex;      /*met en ligne et disposer la nav*/
+    justify-content: space-between;  /*sépare les éléments en utilisant l'espace disponible*/
+    align-items: center;  /*centre verticalement*/
+}
+/* l'espace représente à l'intèrieur de...*/
+nav a
+{
+    color: white;    /* couleur de la police de caractère*/
+    text-decoration: none ; /*enlève le soulignement du lien */
+    font-weight: bold; /* Metre le texte en gras */
+}
+nav ul 
+{
+    display: flex;  /* permet de disposer les éléments uns à coté de l' autre */
+    list-style: none; /* retire les éléments décoratifs commes les points */
+    gap:20px;    /* permet de faire un écart entre les 2 ul de droites,fonctionne uniquement avec display flex*/
+}
+header 
+{   /*couleur en dégrader du fond du header*/
+    background: linear-gradient(to right, #e71969, #f56306); /*dégrader rose orange */
+    color: white;
+    text-align: center; /*alignement horizontal du text */
+    /*padding-top: 215px; 
+    *padding-bottom: 215px;*/
+    padding: 215px 0 215px 0; /*dans l'orde:haut,droite,bas,gauche marge intérieur*/
+    /*padding: 215px 0; dans l'orde :haut/bas et gauche/droite */
+}
+header h1 
+{
+    font-size: 6rem; /*grosseur titre h1 par rapport à la rasine 16px dans le bodi (6*16)*/
+    margin: 0;
+}
+header h2
+{
+    font-size: 4rem;
+    margin: 10px 0 80px 0; /*10px haut, 0px droite, 80px bas, 0 gauvhe*/
+}
+.btn
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #991e5f;
+    padding: 30px 45px; /*30px haut et bas, 45px droite et gauche*/
+    border-radius: 100px; /*arondis les bords*/
+    letter-spacing: 0.2rem; /*espacement entre les lettres*/
+    transition: all 500ms; /*permet d'ajouter une transition entre les changement de valeurs*/
+}
+.btn:hover /*:hover s'enclenche des que la souris survole l'élément pas d'éspace avant et après les":"*/
+{
+    background-color:#ff2400; 
+    transition: all 500ms; /*permet d'ajouter une transition entre les changement de valeurs*/
+}
